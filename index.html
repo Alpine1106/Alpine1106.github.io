@@ -7,36 +7,209 @@
     <title>Evan Lemieux</title>
 
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Evan Lemieux</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                  </ul>
+    <nav id="mainNavbar" class="navbar navbar-light navbar-expand-md py-0 fixed-top">
+        <a id="brand" class="navbar-brand py-0" href="#">Evan Lemieux</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle Navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="" class="nav-link py-0">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link py-0">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link py-0">PROJECTS</a>
+              </li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navLinks">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link py-0 social" href="https://www.instagram.com/evan.lemieux/"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link py-0 social" href="https://www.linkedin.com/in/evan-swanton-93b18a144/"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link py-0 social" href="#"><i class="fas fa-envelope-square"></i></a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link social" href="#"><i class="fas fa-map-marker-alt"></i></a>
+                </li> -->
+            </ul>
         </div>
     </nav>
+
+    <section class="container-fluid landing-page">
+        <div class="row">
+            <div class="col left-block">
+                <h1 class="display-1 pl-5">Create</h1>
+            </div>
+            <div class="col text-center">
+                <!-- <p>Providing startups and local businesses with exposure and support in digital marketing.</p> -->
+            </div>
+        </div>
+        <div class="row bottom-bar">
+            <div class="col my-0">
+                <!-- <h3 class="text-center mt-4">Develop Your Website</h3> -->
+                <h3 class="text-center py-3"><i class="fas fa-angle-double-down"></i></h3>
+            </div>
+        </div>
+    
+    </section>
+
+    <!-- <section class="container-fluid text-above-row">
+        <div class="row justify-content-center">
+            <div class="col">
+                <h3 class="text-center">Develop Your Website</h3>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <section class="container-fluid bottom-bar">
+        <div class="row">
+            <div class="col my-0">
+                <h3 class="text-center mt-4">Develop Your Website</h3>
+                <h3 class="text-center my-3"><i class="fas fa-angle-double-down"></i></h3>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="container-fluid explore-content">
+        <div class="row">
+            <div class="col">
+                <h1 class="display-1 pl-5">Explore</h1>
+            </div>
+        </div>
+
+        <section class="container">
+            <div class="row justify-content-around mb-5">
+                <div class="col">
+                    <div class="card" style="height: 20rem; width: 18rem;">
+                        <img src="imgs/PhotographyBlog.png" class="card-img-top" alt="Photography Blog">
+                        <div class="card-body">
+                            <h5 class="card-title">Photography Blog</h5>
+                            <p class="card-text">A simple photography blog I created using CSS. No framework required for something like this!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="height: 20rem; width: 18rem;">
+                        <img src="imgs/MuseumOfCandy.png" class="card-img-top" alt="Museum Of Candy">
+                        <div class="card-body">
+                            <h5 class="card-title">Museum of Candy</h5>
+                            <p class="card-text">A modern site that I created using Bootstrap 4 with aesthetic design in mind. It is fully mobile device ready.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="height: 20rem; width: 18rem;">
+                        <img src="imgs/Pattern.png" class="card-img-top" alt="Pattern">
+                        <div class="card-body">
+                            <h5 class="card-title">Pattern Image Site</h5>
+                            <p class="card-text">This was a simple demo site I built while learning Bootstrap 4. It shows off the ability to like and download photos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5 justify-content-around">
+                <div class="col">
+                    <div class="card" style="height: 20rem; width: 18rem;">
+                        <img src="imgs/SaveTheCats.png" class="card-img-top" alt="Save The Cats">
+                        <div class="card-body">
+                            <h5 class="card-title">Save The Cats</h5>
+                            <p class="card-text">This was a website I built using Bootstrap 3 as an example landing page for a Foundation or Charity.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="height: 20rem; width: 18rem;">
+                        <img src="imgs/ImageGallery.png" class="card-img-top" alt="Image Gallery">
+                        <div class="card-body">
+                            <h5 class="card-title">Photo Gallery</h5>
+                            <p class="card-text">An Instagram-like photo sharing website I built in Bootstrap 3.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="height: 20rem; width: 18rem;">
+                        <img src="https://images.unsplash.com/photo-1508921108053-9f757ead871c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" class="card-img-top" alt="Image Gallery">
+                        <div class="card-body">
+                            <h5 class="card-title">Websites in Progress</h5>
+                            <p class="card-text">More projects are coming soon. Add yours to the list today!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="container-fluid contact">
+        <div class="row">
+            <div class="col">
+                <h1 class="display-1 pl-5">contact</h1>
+            </div>
+        </div>
+
+        <form class="container py-5 px-0 my-5">
+            <div class="row justify-content-center form-group">
+                <div class="col-6">
+                    <p class="text-danger">Form is a work in progress while I learn back end, please contact me through either Instagram or LinkedIn! Thank you!</p>
+                    <p>If you would like to work with me to build your website, want to hire me, or just want to say hello, input your information below!</p>
+                    <label for="exampleFormControlInput1">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+            </div>
+            <div class="row justify-content-center form-group">
+                <div class="col-3">
+                    <input type="text" class="form-control" placeholder="First Name">
+                </div>
+                <div class="col-3">
+                    <input type="text" class="form-control" placeholder="Last Name">
+                </div>
+            </div>
+            <div class="row justify-content-center form-group">
+                <div class="col-6">
+                    <label for="emailBody">Write your message here:</label>
+                    <textarea class="form-control" id="emailBody" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <button type="submit" class="btn btn-secondary">Submit</button>
+                </div>
+            </div>
+            
+            
+        </form>
+    </section>
+
+    <section class="footer">
+        <footer class="text-center">
+            <p><i class="far fa-copyright"></i> Evan Lemieux 2019</p>
+        </footer>
+    </section>
     
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+          $(document).scroll(function(){
+            var $nav = $("#mainNavbar");
+            $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+          });
+        });
+    </script>
 </body>
 </html>
