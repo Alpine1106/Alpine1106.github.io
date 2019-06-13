@@ -23,7 +23,7 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     color: rgba(0, 0, 0, 0.5);
-    border-right: 2px solid rgba(0, 0, 0, 0.5);
+    /* border-right: 2px solid rgba(0, 0, 0, 0.5); */
     padding-right: 1.5rem;
     /* font-family: 'Permanent Marker', cursive;
     color: #93d3ea;
@@ -35,6 +35,7 @@ body {
 a.nav-link {
     font-size: 1.75rem;
     font-weight: 700;
+    /* border-left: 2px solid rgba(0, 0, 0, 0.5); */
 }
 
 a.social {
@@ -123,6 +124,11 @@ a.social {
                  0px 18px 23px rgba(0, 0, 0, 0.2);
 }
 
+.explore-content .card {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Contact section content */
 
 .contact {
@@ -144,4 +150,23 @@ footer {
     padding-top: 2.5vh;
     height: 8vh;
     background: #cccccc;
+}
+
+/* Media Breakpoints for text */
+
+@media (max-width: 1200px) {
+    .left-block .display-1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .explore-content .display-1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .contact .display-1 {
+        font-size: 4rem;
+        text-align: center;
+    }
 }

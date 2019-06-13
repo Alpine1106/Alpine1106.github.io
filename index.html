@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
-    <nav id="mainNavbar" class="navbar navbar-light navbar-expand-md py-0 fixed-top">
+    <nav id="mainNavbar" class="navbar navbar-light navbar-expand-lg py-0 fixed-top">
         <a id="brand" class="navbar-brand py-0" href="#">Evan Lemieux</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle Navbar">
             <span class="navbar-toggler-icon"></span>
@@ -51,11 +51,11 @@
     <section class="container-fluid landing-page">
         <div class="row">
             <div class="col left-block">
-                <h1 class="display-1 pl-5">Create</h1>
+                <h1 class="display-1 pl-lg-5 text-xs-center text-lg-left">Create</h1>
             </div>
-            <div class="col text-center">
-                <!-- <p>Providing startups and local businesses with exposure and support in digital marketing.</p> -->
-            </div>
+            <!-- <div class="col text-center">
+                <p>Providing startups and local businesses with exposure and support in digital marketing.</p>
+            </div> -->
         </div>
         <div class="row bottom-bar">
             <div class="col my-0">
@@ -86,13 +86,13 @@
     <section class="container-fluid explore-content">
         <div class="row">
             <div class="col">
-                <h1 class="display-1 pl-5">Explore</h1>
+                <h1 class="display-1 pl-lg-5">Explore</h1>
             </div>
         </div>
 
         <section class="container">
             <div class="row justify-content-around mb-5">
-                <div class="col">
+                <div class="col-lg-4 col-md-6 mb-5">
                     <div class="card" style="height: 20rem; width: 18rem;">
                         <img src="imgs/PhotographyBlog.png" class="card-img-top" alt="Photography Blog">
                         <div class="card-body">
@@ -101,7 +101,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-lg-4 col-md-6 mb-5">
                     <div class="card" style="height: 20rem; width: 18rem;">
                         <img src="imgs/MuseumOfCandy.png" class="card-img-top" alt="Museum Of Candy">
                         <div class="card-body">
@@ -110,7 +110,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-lg-4 col-md-6 mb-5">
                     <div class="card" style="height: 20rem; width: 18rem;">
                         <img src="imgs/Pattern.png" class="card-img-top" alt="Pattern">
                         <div class="card-body">
@@ -119,9 +119,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row mb-5 justify-content-around">
-                <div class="col">
+                <div class="col-lg-4 col-md-6 mb-5">
                     <div class="card" style="height: 20rem; width: 18rem;">
                         <img src="imgs/SaveTheCats.png" class="card-img-top" alt="Save The Cats">
                         <div class="card-body">
@@ -130,7 +128,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-lg-4 col-md-6 mb-5">
                     <div class="card" style="height: 20rem; width: 18rem;">
                         <img src="imgs/ImageGallery.png" class="card-img-top" alt="Image Gallery">
                         <div class="card-body">
@@ -139,7 +137,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-lg-4 col-md-6 mb-5">
                     <div class="card" style="height: 20rem; width: 18rem;">
                         <img src="https://images.unsplash.com/photo-1508921108053-9f757ead871c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" class="card-img-top" alt="Image Gallery">
                         <div class="card-body">
@@ -149,39 +147,42 @@
                     </div>
                 </div>
             </div>
+            <div class="row mb-5 justify-content-around">
+                
+            </div>
         </section>
     </section>
 
     <section class="container-fluid contact">
         <div class="row">
             <div class="col">
-                <h1 class="display-1 pl-5">contact</h1>
+                <h1 class="display-1 pl-lg-5">contact</h1>
             </div>
         </div>
         <form class="container py-5 px-0 my-5" action="https://formspree.io/evanlemieux1106@gmail.com" method="POST">
             <div class="row justify-content-center form-group">
-                <div class="col-6">
-                    <p>If you would like to work with me to build your website, want to hire me, or just want to say hello, input your information below!</p>
+                <div class="col-lg-8">
+                    <p>If you would like to contact me to build a website for your business, want to hire me for work, or just want to say hello, input your information below!</p>
                     <label for="exampleFormControlInput1">Email address</label>
                     <input type="email" class="form-control" id="exampleFormControlInput1" name="name" placeholder="name@example.com">
                 </div>
             </div>
             <div class="row justify-content-center form-group">
-                <div class="col-3">
+                <div class="col-lg-4">
                     <input type="text" class="form-control" name="name" placeholder="First Name">
                 </div>
-                <div class="col-3">
+                <div class="col-lg-4">
                     <input type="text" class="form-control" name="name" placeholder="Last Name">
                 </div>
             </div>
             <div class="row justify-content-center form-group">
-                <div class="col-6">
+                <div class="col-lg-8">
                     <label for="emailBody">Write your message here:</label>
                     <textarea class="form-control" id="emailBody" name="name" rows="3"></textarea>
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-6">
+                <div class="col-lg-8">
                     <button type="submit" class="btn btn-secondary" name="name">Submit</button>
                 </div>
             </div>
