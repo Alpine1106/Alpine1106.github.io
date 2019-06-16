@@ -60,7 +60,7 @@ a.social {
     margin-left: 10px;
     /* padding-block: 30vh; */
     padding-top: 20vh;
-    padding-bottom: 50vh;
+    padding-bottom: 35vh;
 
 }
 
@@ -76,10 +76,20 @@ a.social {
 }
 
 .landing-page p {
-    background: rgba(255, 255, 255, 0.8);
-    font-size: 1.75rem;
-    margin-top: 30vh;
-    margin-right: 15vw;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    
+    margin-left: 7.5vw;
+    margin-top: 7.5vh;
+}
+
+.landing-page p #changing {
+    color: #93d3ea;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4);
+                 /* 0px 8px 13px rgba(0, 0, 0, 0.4), */
+                 /* 0px 18px 23px rgba(0, 0, 0, 0.2); */
 }
 
 .bottom-bar {
@@ -173,6 +183,13 @@ footer {
 
 @media (max-height: 850px) {
     .left-block {
-        padding-bottom: 40vh;
+        padding-bottom: 12vh;
+        margin-left: 0;
+    }
+
+    .landing-page p {
+        margin-left: 0;
+        text-align: center;
+        word-spacing: 100vh;
     }
 }
