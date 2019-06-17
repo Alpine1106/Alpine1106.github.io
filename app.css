@@ -187,7 +187,8 @@ footer {
 
 @media (max-height: 850px) {
     .left-block {
-        padding-bottom: 12vh;
+        padding-top: 10vh;
+        padding-bottom: 20vh;
         margin-left: 0;
     }
 
@@ -195,5 +196,9 @@ footer {
         margin-left: 0;
         text-align: center;
         /* word-spacing: 100vh; */
+    }
+
+    .bottom-bar {
+        height: 12vh;
     }
 }
